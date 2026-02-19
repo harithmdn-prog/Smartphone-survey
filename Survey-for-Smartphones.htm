@@ -1,0 +1,61 @@
+** start of index.html **
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Smartphone User Survey</p>
+    <form id="survey-form">
+      <div>
+      <label for="name" id="name-label">Full Name:</label>  
+      <input id="name" type="text" required placeholder="James Arthur">
+      </div>
+      <div>    
+      <label for="email" id="email-label"> Email Address:</label>
+      <input id="email" type="email" required placeholder="example@gmail.com">
+      </div>
+      <div>
+       <label for="number" id="number-label">How many Devices You Used ?</label>
+       <input id="number" type="number" min="3" max="11" placeholder="3">
+       <br>
+       <br>
+        <fieldset>
+          <label>What Brand Do You Use?
+          <select id="dropdown">
+           <option>Apple</option>
+           <option>Samsung</option>
+           <option>Huawei</option>
+           <option>Oppo</option>
+           <option>Others</option>
+           </select>
+        </fieldset>
+        <fieldset>
+         <label>How Satisfied Are You With Your Smartphone?</label>
+         <br>
+         <input type="radio" name="satisfaction" value="very satisfied">Very Satisfied</input>
+         <input type="radio" name="satisfaction" value="satisfied">satisfied</input>
+         <input type="radio" name="satisfaction" value="neutral">neutral</input>
+        </fieldset>
+        <br>
+        <label>What feature Most Matter To You?</label><br>
+        <input type="checkbox" value="inline">Camera Quality<br>
+        <input type="checkbox" value="inline">Battery Life<br>
+        <input type="checkbox" value="inline">Performance<br>
+        <input type="checkbox" value="inline">Price<br>
+        <label id="comments">Additional Comments:</label><br>
+        <textarea id="comments" rows="4" placeholder="Share Your Opinion"></textarea>
+         <br>
+        <button id="submit" type="submit">Submit Survey</button>
+
+                 
+    </form>   
+
+  </body>
+</html>
+
+** end of index.html **
+
